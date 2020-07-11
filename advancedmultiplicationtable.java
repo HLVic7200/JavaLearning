@@ -3,7 +3,7 @@
 // Write y'all codes after this..
 // Yo! Java hook me up with yr scanner..
 import java.util.Scanner;
-// Multiplication Table
+// Advanced Multiplication Table
 public class multiplicationtable {
     public static void main(String[] args) {
         //* Initial Scanner..
@@ -17,18 +17,18 @@ public class multiplicationtable {
         System.out.println("Input Your Ending Value >");
         endvalue = userinput.nextInt();
         // Lets Start The Loop
-        System.out.print("     ");
+        System.out.format("      ");
         for (int table = startvalue; table <= endvalue; table++) {
-            System.out.print("\t" + table);
+            System.out.format("%4d", table);
         }
         System.out.println();
         System.out.println("------------------------------------------");
         for(int x = startvalue ;x<=endvalue;x++) {
             // Print X First
-            System.out.print(x + "\t|");
-            for (int y = startvalue; y <= endvalue; y++) {
+            System.out.format("%4d |",x);
+            for(int y=startvalue;y<=endvalue;y++) {
                 // Then Print Y
-                System.out.print("\t" + x * y);
+                System.out.format("%4d",x * y);
             }
             System.out.println();
         }
