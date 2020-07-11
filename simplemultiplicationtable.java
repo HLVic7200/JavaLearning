@@ -25,6 +25,11 @@ public class simplemultiplicationtable {
             System.out.println("");
         }
         System.out.println("Press Enter key to continue...");
-        userinput.nextLine();
+        try
+        {
+            System.in.read();
+        }
+        catch(Exception e)
+        {}
     }
 }
